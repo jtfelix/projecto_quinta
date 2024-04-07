@@ -1,0 +1,578 @@
+/*importar tipos de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-family: 'Domine', serif;
+    margin: 0;
+}
+
+h1 {
+    padding: 20px 0;    
+}
+
+
+h2 {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 38px;
+    color: white;
+}
+
+h4{
+    font-size: 30px;
+    color: #035AA6;
+    padding: 20px 0;
+}
+
+.fundo {
+    background: white;
+}
+
+.fundo.cinza {
+    background: rgb(173, 173, 173);
+    padding: 40px;
+}
+
+
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.multi-col {
+    display: flex;
+}
+
+.multi-col .seccao {
+    flex: 1;
+}
+
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Botões
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.botao {
+    padding: 5px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+
+.botao.azul {
+    color: #ffffff;
+    background: #035AA6;
+    border: 2px solid #02294a;
+}
+
+.botao.grande {
+    width: 690px;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Menssagens
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.msg{
+    text-align: center;
+    margin: 0 ;
+    padding: 20px;  
+    font-size: 18px;    
+}
+
+.msg.sucesso{
+    background: rgb(201, 238, 201);
+    border: 2px solid green;    
+}
+
+.msg.aviso{
+    border: 2px solid rgba(255, 255, 0, 0.145);
+    background: rgb(238, 238, 170);
+}
+
+.msg.erro{
+    background: rgb(255, 158, 158);
+    border: 2px solid red;
+}
+
+.msg.info{
+    background: #035AA6;
+    color: white;
+}
+
+.hide-msgErr {
+    display: none;    
+}
+
+.msg-erro{
+    color: red;
+}
+
+
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Header
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.header {
+    background: white;
+}
+
+.header .nav {
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+
+}
+
+.header .menu .ops {
+    display: flex;
+    gap: 30px;
+    padding: 20px;    
+}
+
+.header .menu .item{
+    position: relative;
+    padding: 20px 0;
+}
+
+.header .user{
+    display: flex;
+    padding: 15px 30px;
+    background: #cfe9ff;
+    border: 1px solid #035AA6;
+    border-radius: 10px;
+    gap:5px;
+    position: relative;
+}
+
+.header .menu .item.sel {
+    color: #035AA6;
+}
+
+.img-nav{
+    padding-top: 8px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin-top: 40px;
+    min-width: 150px;    
+    left: 0;
+}
+
+.submenu li {
+    display: inline;
+}
+
+.item:hover .submenu {
+    display: inline;
+}
+
+.ops:hover .submenu li {
+    float: none;
+}
+
+.ops:hover .submenu li a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.ops:hover .submenu li a:hover {
+    background-color: #75b6ee;
+}
+
+
+.user:hover .submenu {
+    display: inline;
+}
+
+.user:hover .submenu li {
+    float: none;
+}
+
+.user:hover .submenu li a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.user:hover .submenu li a:hover {
+    background-color: #75b6ee;
+}
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Homepage
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+.fundo .destaque {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 30px 0;
+    line-height: 35px;
+}
+
+.destaque .galeria {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.fundo .banner {
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+.fundo .seccao {
+    display: flex;
+    align-items: center;
+
+}
+
+.fundo .seccao.cinza {
+    background: rgb(233, 233, 233);
+}
+
+.fundo .seccao .img-descritivo {
+    background-size: cover;
+    height: 425px;
+    flex-basis: 50%;
+    background-position: center;
+
+}
+
+.seccao .descritivo {
+    line-height: 40px;
+    padding: 30px 30px;
+    flex-basis: 50%;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Registo/Login
+---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------*/
+
+.wrapper .form-registo{
+    display: flex;
+    background: rgb(243, 240, 240);
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 5px solid #035AA6;
+}
+
+.wrapper .form-registo .container-registo{
+    display: flex ;
+    text-align: left;
+    flex-direction: column;    
+    padding: 20px;
+    background: rgb(243, 240, 240);
+    flex-basis: 50%;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.wrapper .container-registo .campo{    
+       
+    border: 1px solid #035AA6;
+    border-radius: 5px;       
+    height: 40px;
+    width: 350px;
+}
+
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Página - Alojamento
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.fundo .container {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #035AA6;
+}
+
+.fundo .tab-container {
+    margin: 20px 0;
+    gap: 60px;
+    display: flex;
+
+}
+
+.tab-container .nav-tab {
+
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Página - A quinta
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.descricao-texto {
+    line-height: 40px;
+}
+
+.wrapper .galeria {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Contactos
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+.fundo .container-form {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    border: 5px solid #035AA6;
+
+}
+
+.fundo .formulario {
+    font-size: 18px;
+    align-items: center;
+    width: 690px;
+}
+
+.fundo .formulario.tamanho-total {
+    width: auto;
+    }
+
+.formulario .item {
+    margin: 20px 0;
+}
+
+.item.grande {
+    font-size: 35px;
+    margin-top: 60px;
+    font-family: 'Domine', serif;
+    font-weight: bold;
+}
+
+.item .campo {
+    min-height: 40px;    
+    overflow-x: hidden;
+    width: 690px;
+    border: 1px solid #035AA6;
+    border-radius: 5px;
+}
+
+.item .campo.grande {
+    height: 100px;
+    resize: vertical;
+    overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                   Reserva
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.titulo {
+    display: flex;
+    height: 150px;
+    background: #035AA6;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo .container-reserva {
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    border: 5px solid #035AA6;
+    margin-bottom: 30px;
+}
+
+
+.fundo .container-reserva .formulario {
+    font-size: 18px;
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: space-between;              
+}
+
+.fundo .container-reserva .formulario .campo{
+width: 330px;
+border: 1px solid #035AA6;
+border-radius: 5px;  
+font-size: 18px;
+padding: 10px;
+}
+
+.fundo .container-reserva .formulario .campo.grande {
+    min-height: 100px;
+    resize: vertical;
+    overflow-x: hidden;       
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                   Resumo
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.container-resumo{
+    background: white;
+    border: 5px solid #035AA6;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.container-resumo .dados-reserva{
+    display: flex;    
+    flex-wrap: wrap;   
+    gap: 50px;
+    margin: 40px auto;     
+}
+
+.container-resumo .dados-reserva .item{
+    font-size: 18px;
+    width: 20%;    
+}
+
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Footer
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+.footer {
+    background: rgb(47, 46, 46);
+    padding: 10px 0;
+    color: white;
+}
+
+.footer .seccao {
+    display: flex;
+    gap: 10px;
+}
+
+.link-foot {
+    color: white;
+}
+
+.footer .destaque {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 10px;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+                                    Responsivo
+---------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:1024px) {
+    .wrapper {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .header .nav {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .destaque .galeria {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .header .nav .menu {
+        flex-wrap: wrap;
+    }
+}
