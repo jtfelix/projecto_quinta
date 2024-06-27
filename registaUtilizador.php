@@ -22,10 +22,10 @@ include('header.php');
             }            
         });
     })
-</script>
+</script>fdsfdfddsffds ff sf dsdfdfs 
 <div class='titulo'>
     <h3>Registo</h3>
-</div>
+</div>fdsfds fsfds
 <div class='fundo'>
     <div class='wrapper'>
         <form class='form-registo' method="POST" action='actions.php?act=registaUtilizador'>
